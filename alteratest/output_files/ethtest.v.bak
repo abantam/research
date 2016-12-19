@@ -1,0 +1,14 @@
+module ethtest(
+	input rx_clk,
+	input [3:0] rx_data,
+	output [3:0] led
+	);
+	
+	wire [3:0] data;
+	always @(posedge rx_clk) begin
+		data <= rx_data;
+	end
+	
+	assign led = data;
+	
+endmodule

@@ -1,0 +1,8 @@
+module first_stage(
+	input [3:0] a1,
+	output [2:0] scheme
+);
+
+	
+	
+endmodule

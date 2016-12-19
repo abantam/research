@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/research/alteratest/simulation/modelsim
+valteratest
+!s110 1478591952
+!i10b 1
+!s100 <i>Gc9>=YYnBKcVf^c?2P3
+Ik`WMD]9k5:>gb::2_l^_^1
+V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1478591495
+8C:/research/alteratest/alteratest.v
+FC:/research/alteratest/alteratest.v
+L0 1
+OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1478591952.179000
+!s107 C:/research/alteratest/alteratest.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/research/alteratest|C:/research/alteratest/alteratest.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/research/alteratest

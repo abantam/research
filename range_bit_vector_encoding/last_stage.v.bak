@@ -1,0 +1,16 @@
+module last_stage(
+	input clk, rst,
+	input [3:0] As,
+	input [3:0] LBs, UBs,
+	input [3:0] sig,
+	output match
+);
+
+	always @(posedge clk or negedge rst) begin
+		if(!rst)
+			match <= 0;
+		else
+			
+	end
+
+endmodule

@@ -1,0 +1,7 @@
+module test(
+	input [3:0] rx_data;
+	output [3:0] led;
+	);
+	
+	assign led[3:0] = rx_data[3:0];
+endmodule

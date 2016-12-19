@@ -1,0 +1,7 @@
+
+State Machine - |alteratest|light
+Name light.11 light.10 light.01 light.00 
+light.00 0 0 0 0 
+light.01 0 0 1 1 
+light.10 0 1 0 1 
+light.11 1 0 0 1 

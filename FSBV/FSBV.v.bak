@@ -1,0 +1,6 @@
+module FSBV(
+	input  clk,rst,
+	input  [103:0] pkt_header,
+	output [103:0] matching_bv
+);
+
