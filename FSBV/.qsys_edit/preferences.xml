@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces" showResetDomains="0" showClockDomains="1">
+  <columns>
+   <connections preferredWidth="47" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Basic Functions,Library/Basic Functions/On Chip Memory,Library/Basic Functions/Simulation; Debug and Verification,Library,Project" />
+ <window width="1936" height="1056" x="-8" y="-8" />
+ <hdlexample language="VERILOG" />
+ <generation simulation="VERILOG" path="output_files" greybox="0" />
+</preferences>

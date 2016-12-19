@@ -1,0 +1,24 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\research\FSBV\unsaved.qsys --simulation=VERILOG --output-directory=C:\research\FSBV\unsaved\simulation --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading FSBV/unsaved.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 15.0]
+Progress: Parameterizing module clk_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 15.0]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: unsaved: Generating unsaved "unsaved" for SIM_VERILOG
+Info: onchip_memory2_0: Starting RTL generation for module 'unsaved_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/15.0/quartus/bin64/perl/bin/perl.exe -I C:/altera/15.0/quartus/bin64/perl/lib -I C:/altera/15.0/quartus/sopc_builder/bin/europa -I C:/altera/15.0/quartus/sopc_builder/bin/perl_lib -I C:/altera/15.0/quartus/sopc_builder/bin -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/15.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=unsaved_onchip_memory2_0 --dir=C:/Users/ê¥êÖåíéu/AppData/Local/Temp/alt7154_1030207563103288525.dir/0001_onchip_memory2_0_gen/ --quartus_dir=C:/altera/15.0/quartus --verilog --config=C:/Users/ê¥êÖåíéu/AppData/Local/Temp/alt7154_1030207563103288525.dir/0001_onchip_memory2_0_gen//unsaved_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/ê¥êÖåíéu/AppData/Local/Temp/alt7154_1030207563103288525.dir/0001_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'unsaved_onchip_memory2_0'
+Info: onchip_memory2_0: "unsaved" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: unsaved: Done "unsaved" with 2 modules, 3 files
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\research\FSBV\unsaved\unsaved.spd --output-directory=C:/research/FSBV/unsaved/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\research\FSBV\unsaved\unsaved.spd --output-directory=C:/research/FSBV/unsaved/simulation/ --use-relative-paths=true
+Error: An unexpected error occurred during Generate: java.lang.Error: Call to quartus_sh failed unexpectedly: CreateProcess failed: No such file or directory ------------------------------------------------ package "tb2" isn't loaded statically     while executing "load "" tb2 " ------------------------------------------------ 

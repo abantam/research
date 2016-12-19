@@ -1,0 +1,19 @@
+# system info unsaved on 2016.12.19.20:35:12
+system_info:
+name,value
+DEVICE,EP4CE115F29C7
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1482147312
+#
+#
+# Files generated for unsaved on 2016.12.19.20:35:12
+files:
+filepath,kind,attributes,module,is_top
+simulation/unsaved.v,VERILOG,,unsaved,true
+simulation/submodules/unsaved_onchip_memory2_0.hex,HEX,,unsaved_onchip_memory2_0,false
+simulation/submodules/unsaved_onchip_memory2_0.v,VERILOG,,unsaved_onchip_memory2_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+unsaved.onchip_memory2_0,unsaved_onchip_memory2_0
