@@ -1,6 +1,6 @@
 Analysis & Synthesis report for FSBV
-Thu Dec 15 19:15:38 2016
-Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Wed Dec 21 01:46:24 2016
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -24,41 +24,41 @@ Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
 applicable license agreement, including, without limitation, 
 that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
+devices manufactured by Intel and sold by Intel or its 
 authorized distributors.  Please refer to the applicable 
 agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 15 19:15:38 2016      ;
-; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
-; Revision Name                      ; FSBV                                       ;
-; Top-level Entity Name              ; FSBV                                       ;
-; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 0                                          ;
-;     Total combinational functions  ; 0                                          ;
-;     Dedicated logic registers      ; 0                                          ;
-; Total registers                    ; 0                                          ;
-; Total pins                         ; 138                                        ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Dec 21 01:46:24 2016       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; FSBV                                        ;
+; Top-level Entity Name              ; FSBV                                        ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 138                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -75,7 +75,7 @@ agreement for further details.
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -144,7 +144,6 @@ agreement for further details.
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
@@ -161,7 +160,6 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -170,7 +168,7 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------+------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ; Library ;
 +----------------------------------+-----------------+------------------------+------------------------------+---------+
-; FSBV.v                           ; yes             ; User Verilog HDL File  ; C:/research/FSBV/FSBV.v      ;         ;
+; FSBV.v                           ; yes             ; User Verilog HDL File  ; E:/research/FSBV/FSBV.v      ;         ;
 +----------------------------------+-----------------+------------------------+------------------------------+---------+
 
 
@@ -205,13 +203,13 @@ agreement for further details.
 +---------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |FSBV                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 138  ; 0            ; |FSBV               ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |FSBV                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 138  ; 0            ; |FSBV               ; FSBV        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -268,168 +266,192 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
-    Info: Processing started: Thu Dec 15 19:15:29 2016
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Wed Dec 21 01:46:08 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FSBV -c FSBV
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12248): Elaborating Qsys system entity "unsaved.qsys"
+Info (12250): 2016.12.21.01:46:19 Progress: Loading FSBV/unsaved.qsys
+Info (12250): 2016.12.21.01:46:20 Progress: Reading input file
+Info (12250): 2016.12.21.01:46:20 Progress: Adding clk_0 [clock_source 16.1]
+Info (12250): 2016.12.21.01:46:20 Progress: Parameterizing module clk_0
+Info (12250): 2016.12.21.01:46:20 Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Info (12250): 2016.12.21.01:46:20 Progress: Parameterizing module onchip_memory2_0
+Info (12250): 2016.12.21.01:46:20 Progress: Building connections
+Info (12250): 2016.12.21.01:46:20 Progress: Parameterizing connections
+Info (12250): 2016.12.21.01:46:20 Progress: Validating
+Info (12250): 2016.12.21.01:46:21 Progress: Done reading input file
+Info (12250): Unsaved: Generating unsaved "unsaved" for QUARTUS_SYNTH
+Info (12250): Onchip_memory2_0: Starting RTL generation for module 'unsaved_onchip_memory2_0'
+Info (12250): Onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=unsaved_onchip_memory2_0 --dir=C:/Users/takeshi/AppData/Local/Temp/alt7155_3613958567031388461.dir/0001_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/takeshi/AppData/Local/Temp/alt7155_3613958567031388461.dir/0001_onchip_memory2_0_gen//unsaved_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info (12250): Onchip_memory2_0: Done RTL generation for module 'unsaved_onchip_memory2_0'
+Info (12250): Onchip_memory2_0: "unsaved" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info (12250): Unsaved: Done "unsaved" with 2 modules, 3 files
+Info (12249): Finished elaborating Qsys system entity "unsaved.qsys"
 Info (12021): Found 1 design units, including 1 entities, in source file sp_build_bv.v
-    Info (12023): Found entity 1: sp_build_bv
-Info (12021): Found 1 design units, including 1 entities, in source file ram.v
-    Info (12023): Found entity 1: ram
+    Info (12023): Found entity 1: sp_build_bv File: E:/research/FSBV/sp_build_bv.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file fsbv.v
-    Info (12023): Found entity 1: FSBV
+    Info (12023): Found entity 1: FSBV File: E:/research/FSBV/FSBV.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/unsaved/submodules/unsaved_onchip_memory2_0.v
+    Info (12023): Found entity 1: unsaved_onchip_memory2_0 File: E:/research/FSBV/db/ip/unsaved/submodules/unsaved_onchip_memory2_0.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file db/ip/unsaved/unsaved.v
+    Info (12023): Found entity 1: unsaved File: E:/research/FSBV/db/ip/unsaved/unsaved.v Line: 6
 Info (12127): Elaborating entity "FSBV" for the top level hierarchy
-Warning (10034): Output port "matching_bv" at FSBV.v(5) has no driver
+Warning (10034): Output port "matching_bv" at FSBV.v(5) has no driver File: E:/research/FSBV/FSBV.v Line: 5
+Warning (12158): Entity "FSBV" contains only dangling pins
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "matching_bv[0]" is stuck at GND
-    Warning (13410): Pin "matching_bv[1]" is stuck at GND
-    Warning (13410): Pin "matching_bv[2]" is stuck at GND
-    Warning (13410): Pin "matching_bv[3]" is stuck at GND
-    Warning (13410): Pin "matching_bv[4]" is stuck at GND
-    Warning (13410): Pin "matching_bv[5]" is stuck at GND
-    Warning (13410): Pin "matching_bv[6]" is stuck at GND
-    Warning (13410): Pin "matching_bv[7]" is stuck at GND
-    Warning (13410): Pin "matching_bv[8]" is stuck at GND
-    Warning (13410): Pin "matching_bv[9]" is stuck at GND
-    Warning (13410): Pin "matching_bv[10]" is stuck at GND
-    Warning (13410): Pin "matching_bv[11]" is stuck at GND
-    Warning (13410): Pin "matching_bv[12]" is stuck at GND
-    Warning (13410): Pin "matching_bv[13]" is stuck at GND
-    Warning (13410): Pin "matching_bv[14]" is stuck at GND
-    Warning (13410): Pin "matching_bv[15]" is stuck at GND
-    Warning (13410): Pin "matching_bv[16]" is stuck at GND
-    Warning (13410): Pin "matching_bv[17]" is stuck at GND
-    Warning (13410): Pin "matching_bv[18]" is stuck at GND
-    Warning (13410): Pin "matching_bv[19]" is stuck at GND
-    Warning (13410): Pin "matching_bv[20]" is stuck at GND
-    Warning (13410): Pin "matching_bv[21]" is stuck at GND
-    Warning (13410): Pin "matching_bv[22]" is stuck at GND
-    Warning (13410): Pin "matching_bv[23]" is stuck at GND
-    Warning (13410): Pin "matching_bv[24]" is stuck at GND
-    Warning (13410): Pin "matching_bv[25]" is stuck at GND
-    Warning (13410): Pin "matching_bv[26]" is stuck at GND
-    Warning (13410): Pin "matching_bv[27]" is stuck at GND
-    Warning (13410): Pin "matching_bv[28]" is stuck at GND
-    Warning (13410): Pin "matching_bv[29]" is stuck at GND
-    Warning (13410): Pin "matching_bv[30]" is stuck at GND
-    Warning (13410): Pin "matching_bv[31]" is stuck at GND
+    Warning (13410): Pin "matching_bv[0]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[1]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[2]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[3]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[4]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[5]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[6]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[7]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[8]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[9]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[10]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[11]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[12]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[13]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[14]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[15]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[16]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[17]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[18]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[19]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[20]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[21]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[22]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[23]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[24]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[25]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[26]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[27]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[28]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[29]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[30]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+    Warning (13410): Pin "matching_bv[31]" is stuck at GND File: E:/research/FSBV/FSBV.v Line: 5
+Warning (20013): Ignored 22 assignments for entity "unsaved" -- entity does not exist in design
+Warning (20013): Ignored 36 assignments for entity "unsaved_onchip_memory2_0" -- entity does not exist in design
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 106 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk"
-    Warning (15610): No output dependent on input pin "rst"
-    Warning (15610): No output dependent on input pin "pkt_header[0]"
-    Warning (15610): No output dependent on input pin "pkt_header[1]"
-    Warning (15610): No output dependent on input pin "pkt_header[2]"
-    Warning (15610): No output dependent on input pin "pkt_header[3]"
-    Warning (15610): No output dependent on input pin "pkt_header[4]"
-    Warning (15610): No output dependent on input pin "pkt_header[5]"
-    Warning (15610): No output dependent on input pin "pkt_header[6]"
-    Warning (15610): No output dependent on input pin "pkt_header[7]"
-    Warning (15610): No output dependent on input pin "pkt_header[8]"
-    Warning (15610): No output dependent on input pin "pkt_header[9]"
-    Warning (15610): No output dependent on input pin "pkt_header[10]"
-    Warning (15610): No output dependent on input pin "pkt_header[11]"
-    Warning (15610): No output dependent on input pin "pkt_header[12]"
-    Warning (15610): No output dependent on input pin "pkt_header[13]"
-    Warning (15610): No output dependent on input pin "pkt_header[14]"
-    Warning (15610): No output dependent on input pin "pkt_header[15]"
-    Warning (15610): No output dependent on input pin "pkt_header[16]"
-    Warning (15610): No output dependent on input pin "pkt_header[17]"
-    Warning (15610): No output dependent on input pin "pkt_header[18]"
-    Warning (15610): No output dependent on input pin "pkt_header[19]"
-    Warning (15610): No output dependent on input pin "pkt_header[20]"
-    Warning (15610): No output dependent on input pin "pkt_header[21]"
-    Warning (15610): No output dependent on input pin "pkt_header[22]"
-    Warning (15610): No output dependent on input pin "pkt_header[23]"
-    Warning (15610): No output dependent on input pin "pkt_header[24]"
-    Warning (15610): No output dependent on input pin "pkt_header[25]"
-    Warning (15610): No output dependent on input pin "pkt_header[26]"
-    Warning (15610): No output dependent on input pin "pkt_header[27]"
-    Warning (15610): No output dependent on input pin "pkt_header[28]"
-    Warning (15610): No output dependent on input pin "pkt_header[29]"
-    Warning (15610): No output dependent on input pin "pkt_header[30]"
-    Warning (15610): No output dependent on input pin "pkt_header[31]"
-    Warning (15610): No output dependent on input pin "pkt_header[32]"
-    Warning (15610): No output dependent on input pin "pkt_header[33]"
-    Warning (15610): No output dependent on input pin "pkt_header[34]"
-    Warning (15610): No output dependent on input pin "pkt_header[35]"
-    Warning (15610): No output dependent on input pin "pkt_header[36]"
-    Warning (15610): No output dependent on input pin "pkt_header[37]"
-    Warning (15610): No output dependent on input pin "pkt_header[38]"
-    Warning (15610): No output dependent on input pin "pkt_header[39]"
-    Warning (15610): No output dependent on input pin "pkt_header[40]"
-    Warning (15610): No output dependent on input pin "pkt_header[41]"
-    Warning (15610): No output dependent on input pin "pkt_header[42]"
-    Warning (15610): No output dependent on input pin "pkt_header[43]"
-    Warning (15610): No output dependent on input pin "pkt_header[44]"
-    Warning (15610): No output dependent on input pin "pkt_header[45]"
-    Warning (15610): No output dependent on input pin "pkt_header[46]"
-    Warning (15610): No output dependent on input pin "pkt_header[47]"
-    Warning (15610): No output dependent on input pin "pkt_header[48]"
-    Warning (15610): No output dependent on input pin "pkt_header[49]"
-    Warning (15610): No output dependent on input pin "pkt_header[50]"
-    Warning (15610): No output dependent on input pin "pkt_header[51]"
-    Warning (15610): No output dependent on input pin "pkt_header[52]"
-    Warning (15610): No output dependent on input pin "pkt_header[53]"
-    Warning (15610): No output dependent on input pin "pkt_header[54]"
-    Warning (15610): No output dependent on input pin "pkt_header[55]"
-    Warning (15610): No output dependent on input pin "pkt_header[56]"
-    Warning (15610): No output dependent on input pin "pkt_header[57]"
-    Warning (15610): No output dependent on input pin "pkt_header[58]"
-    Warning (15610): No output dependent on input pin "pkt_header[59]"
-    Warning (15610): No output dependent on input pin "pkt_header[60]"
-    Warning (15610): No output dependent on input pin "pkt_header[61]"
-    Warning (15610): No output dependent on input pin "pkt_header[62]"
-    Warning (15610): No output dependent on input pin "pkt_header[63]"
-    Warning (15610): No output dependent on input pin "pkt_header[64]"
-    Warning (15610): No output dependent on input pin "pkt_header[65]"
-    Warning (15610): No output dependent on input pin "pkt_header[66]"
-    Warning (15610): No output dependent on input pin "pkt_header[67]"
-    Warning (15610): No output dependent on input pin "pkt_header[68]"
-    Warning (15610): No output dependent on input pin "pkt_header[69]"
-    Warning (15610): No output dependent on input pin "pkt_header[70]"
-    Warning (15610): No output dependent on input pin "pkt_header[71]"
-    Warning (15610): No output dependent on input pin "pkt_header[72]"
-    Warning (15610): No output dependent on input pin "pkt_header[73]"
-    Warning (15610): No output dependent on input pin "pkt_header[74]"
-    Warning (15610): No output dependent on input pin "pkt_header[75]"
-    Warning (15610): No output dependent on input pin "pkt_header[76]"
-    Warning (15610): No output dependent on input pin "pkt_header[77]"
-    Warning (15610): No output dependent on input pin "pkt_header[78]"
-    Warning (15610): No output dependent on input pin "pkt_header[79]"
-    Warning (15610): No output dependent on input pin "pkt_header[80]"
-    Warning (15610): No output dependent on input pin "pkt_header[81]"
-    Warning (15610): No output dependent on input pin "pkt_header[82]"
-    Warning (15610): No output dependent on input pin "pkt_header[83]"
-    Warning (15610): No output dependent on input pin "pkt_header[84]"
-    Warning (15610): No output dependent on input pin "pkt_header[85]"
-    Warning (15610): No output dependent on input pin "pkt_header[86]"
-    Warning (15610): No output dependent on input pin "pkt_header[87]"
-    Warning (15610): No output dependent on input pin "pkt_header[88]"
-    Warning (15610): No output dependent on input pin "pkt_header[89]"
-    Warning (15610): No output dependent on input pin "pkt_header[90]"
-    Warning (15610): No output dependent on input pin "pkt_header[91]"
-    Warning (15610): No output dependent on input pin "pkt_header[92]"
-    Warning (15610): No output dependent on input pin "pkt_header[93]"
-    Warning (15610): No output dependent on input pin "pkt_header[94]"
-    Warning (15610): No output dependent on input pin "pkt_header[95]"
-    Warning (15610): No output dependent on input pin "pkt_header[96]"
-    Warning (15610): No output dependent on input pin "pkt_header[97]"
-    Warning (15610): No output dependent on input pin "pkt_header[98]"
-    Warning (15610): No output dependent on input pin "pkt_header[99]"
-    Warning (15610): No output dependent on input pin "pkt_header[100]"
-    Warning (15610): No output dependent on input pin "pkt_header[101]"
-    Warning (15610): No output dependent on input pin "pkt_header[102]"
-    Warning (15610): No output dependent on input pin "pkt_header[103]"
+    Warning (15610): No output dependent on input pin "clk" File: E:/research/FSBV/FSBV.v Line: 2
+    Warning (15610): No output dependent on input pin "rst" File: E:/research/FSBV/FSBV.v Line: 2
+    Warning (15610): No output dependent on input pin "pkt_header[0]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[1]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[2]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[3]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[4]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[5]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[6]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[7]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[8]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[9]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[10]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[11]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[12]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[13]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[14]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[15]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[16]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[17]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[18]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[19]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[20]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[21]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[22]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[23]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[24]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[25]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[26]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[27]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[28]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[29]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[30]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[31]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[32]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[33]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[34]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[35]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[36]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[37]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[38]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[39]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[40]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[41]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[42]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[43]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[44]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[45]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[46]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[47]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[48]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[49]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[50]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[51]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[52]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[53]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[54]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[55]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[56]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[57]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[58]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[59]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[60]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[61]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[62]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[63]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[64]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[65]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[66]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[67]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[68]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[69]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[70]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[71]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[72]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[73]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[74]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[75]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[76]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[77]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[78]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[79]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[80]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[81]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[82]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[83]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[84]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[85]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[86]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[87]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[88]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[89]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[90]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[91]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[92]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[93]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[94]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[95]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[96]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[97]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[98]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[99]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[100]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[101]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[102]" File: E:/research/FSBV/FSBV.v Line: 3
+    Warning (15610): No output dependent on input pin "pkt_header[103]" File: E:/research/FSBV/FSBV.v Line: 3
 Info (21057): Implemented 138 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 106 input pins
     Info (21059): Implemented 32 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 141 warnings
-    Info: Peak virtual memory: 679 megabytes
-    Info: Processing ended: Thu Dec 15 19:15:38 2016
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 145 warnings
+    Info: Peak virtual memory: 621 megabytes
+    Info: Processing ended: Wed Dec 21 01:46:24 2016
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:35
 
 
