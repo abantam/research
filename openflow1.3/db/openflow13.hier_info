@@ -1,0 +1,25 @@
+|openflow13
+packet[0] => ~NO_FANOUT~
+packet[1] => ~NO_FANOUT~
+packet[2] => ~NO_FANOUT~
+packet[3] => ~NO_FANOUT~
+packet[4] => ~NO_FANOUT~
+packet[5] => ~NO_FANOUT~
+packet[6] => ~NO_FANOUT~
+packet[7] => ~NO_FANOUT~
+packet[8] => ~NO_FANOUT~
+packet[9] => ~NO_FANOUT~
+packet[10] => ~NO_FANOUT~
+bit_vector[0] << <GND>
+bit_vector[1] << <GND>
+bit_vector[2] << <GND>
+bit_vector[3] << <GND>
+bit_vector[4] << <GND>
+bit_vector[5] << <GND>
+bit_vector[6] << <GND>
+bit_vector[7] << <GND>
+bit_vector[8] << <GND>
+bit_vector[9] << <GND>
+bit_vector[10] << <GND>
+
+
