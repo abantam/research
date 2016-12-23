@@ -1,5 +1,5 @@
 Analysis & Synthesis report for openflow13
-Fri Dec 23 15:22:39 2016
+Fri Dec 23 15:35:44 2016
 Quartus Prime Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 23 15:22:39 2016       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 23 15:35:44 2016       ;
 ; Quartus Prime Version              ; 16.1.1 Build 200 11/30/2016 SJ Lite Edition ;
 ; Revision Name                      ; openflow13                                  ;
 ; Top-level Entity Name              ; openflow13                                  ;
@@ -281,7 +281,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
-    Info: Processing started: Fri Dec 23 15:22:30 2016
+    Info: Processing started: Fri Dec 23 15:35:35 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off openflow13 -c openflow13
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -289,6 +289,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file openflo
     Info (12023): Found entity 1: openflow13 File: C:/research/openflow1.3/openflow13.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file classify_eth_type.v
     Info (12023): Found entity 1: classify_eth_type File: C:/research/openflow1.3/classify_eth_type.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file classify_ip_proto.v
+    Info (12023): Found entity 1: classify_ip_proto File: C:/research/openflow1.3/classify_ip_proto.v Line: 1
 Info (12127): Elaborating entity "openflow13" for the top level hierarchy
 Warning (10034): Output port "bit_vector" at openflow13.v(9) has no driver File: C:/research/openflow1.3/openflow13.v Line: 9
 Info (12128): Elaborating entity "classify_eth_type" for hierarchy "classify_eth_type:cet" File: C:/research/openflow1.3/openflow13.v Line: 18
@@ -405,9 +407,9 @@ Info (21057): Implemented 101 device resources after synthesis - the final resou
     Info (21058): Implemented 90 input pins
     Info (21059): Implemented 11 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 107 warnings
-    Info: Peak virtual memory: 608 megabytes
-    Info: Processing ended: Fri Dec 23 15:22:39 2016
+    Info: Peak virtual memory: 609 megabytes
+    Info: Processing ended: Fri Dec 23 15:35:44 2016
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:20
 
 

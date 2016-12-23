@@ -89,17 +89,17 @@ udp_dst[12] => ~NO_FANOUT~
 udp_dst[13] => ~NO_FANOUT~
 udp_dst[14] => ~NO_FANOUT~
 udp_dst[15] => ~NO_FANOUT~
-bit_vector[0] <= <GND>
-bit_vector[1] <= <GND>
-bit_vector[2] <= <GND>
-bit_vector[3] <= <GND>
-bit_vector[4] <= <GND>
-bit_vector[5] <= <GND>
-bit_vector[6] <= <GND>
-bit_vector[7] <= <GND>
-bit_vector[8] <= <GND>
-bit_vector[9] <= <GND>
-bit_vector[10] <= <GND>
+bit_vector[0] << <GND>
+bit_vector[1] << <GND>
+bit_vector[2] << <GND>
+bit_vector[3] << <GND>
+bit_vector[4] << <GND>
+bit_vector[5] << <GND>
+bit_vector[6] << <GND>
+bit_vector[7] << <GND>
+bit_vector[8] << <GND>
+bit_vector[9] << <GND>
+bit_vector[10] << <GND>
 
 
 |openflow13|classify_eth_type:cet
