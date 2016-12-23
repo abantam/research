@@ -8,13 +8,23 @@ module openflow13(
 	output [10:0] bit_vector
 );
 
-wire result;
+parameter ipv4 = 16'h0800;
+parameter ipv6 = 16'h86dd;
+
+wire en_ipv4, en_ipv6, en_other;
 
 classify_eth_type cet(
 	.clk(clk),
 	.rst(rst),
 	.eth_type(eth_type),
-	.result(result)
+	.en_ipv4(en_ipv4),
+	.en_ipv6(en_ipv6),
+	.en_other(en_other)
 );
+//
+//if(result == ipv4) begin
+//end
+//else if(result == ipv6) begin
+//end
 
 endmodule

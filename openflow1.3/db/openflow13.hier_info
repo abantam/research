@@ -103,10 +103,11 @@ bit_vector[10] << <GND>
 
 
 |openflow13|classify_eth_type:cet
-clk => result[0].OUTPUTSELECT
-clk => result[1].OUTPUTSELECT
-clk => result[1].IN0
-rst => result[1].IN1
+clk => en_ipv6.OUTPUTSELECT
+clk => en_other.OUTPUTSELECT
+clk => en_ipv4.OUTPUTSELECT
+clk => en_ipv4.IN0
+rst => en_ipv4.IN1
 eth_type[0] => Equal0.IN15
 eth_type[0] => Equal1.IN8
 eth_type[1] => Equal0.IN14
@@ -139,7 +140,8 @@ eth_type[14] => Equal0.IN2
 eth_type[14] => Equal1.IN9
 eth_type[15] => Equal0.IN1
 eth_type[15] => Equal1.IN0
-result[0] <= result[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= result[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+en_ipv4 <= en_ipv4$latch.DB_MAX_OUTPUT_PORT_TYPE
+en_ipv6 <= en_ipv6.DB_MAX_OUTPUT_PORT_TYPE
+en_other <= en_other.DB_MAX_OUTPUT_PORT_TYPE
 
 

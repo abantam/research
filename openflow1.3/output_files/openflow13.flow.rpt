@@ -1,5 +1,5 @@
 Flow report for openflow13
-Fri Dec 23 15:36:00 2016
+Fri Dec 23 17:36:00 2016
 Quartus Prime Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 23 15:35:58 2016       ;
+; Flow Status                        ; Successful - Fri Dec 23 17:35:57 2016       ;
 ; Quartus Prime Version              ; 16.1.1 Build 200 11/30/2016 SJ Lite Edition ;
 ; Revision Name                      ; openflow13                                  ;
 ; Top-level Entity Name              ; openflow13                                  ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/23/2016 15:35:36 ;
+; Start date & time ; 12/23/2016 17:35:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; openflow13          ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 176831340863085.148247493603044        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 176831340863085.148248213409716        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --         ;
@@ -92,11 +92,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 594 MB              ; 00:00:20                           ;
-; Fitter                    ; 00:00:09     ; 1.0                     ; 1463 MB             ; 00:00:13                           ;
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 595 MB              ; 00:00:20                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 1462 MB             ; 00:00:14                           ;
 ; Assembler                 ; 00:00:03     ; 1.0                     ; 556 MB              ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 706 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:38                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 706 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:39                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

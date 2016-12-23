@@ -1,5 +1,5 @@
 Analysis & Synthesis report for openflow13
-Fri Dec 23 15:35:44 2016
+Fri Dec 23 17:35:43 2016
 Quartus Prime Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
 
 
@@ -14,11 +14,12 @@ Quartus Prime Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: classify_eth_type:cet
- 10. Port Connectivity Checks: "classify_eth_type:cet"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |openflow13
+ 10. Parameter Settings for User Entity Instance: classify_eth_type:cet
+ 11. Port Connectivity Checks: "classify_eth_type:cet"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,7 +46,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 23 15:35:44 2016       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 23 17:35:43 2016       ;
 ; Quartus Prime Version              ; 16.1.1 Build 200 11/30/2016 SJ Lite Edition ;
 ; Revision Name                      ; openflow13                                  ;
 ; Top-level Entity Name              ; openflow13                                  ;
@@ -230,6 +231,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |openflow13 ;
++----------------+------------------+----------------------------------------+
+; Parameter Name ; Value            ; Type                                   ;
++----------------+------------------+----------------------------------------+
+; ipv4           ; 0000100000000000 ; Unsigned Binary                        ;
+; ipv6           ; 1000011011011101 ; Unsigned Binary                        ;
++----------------+------------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +--------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: classify_eth_type:cet ;
 +----------------+------------------+--------------------------------+
@@ -241,14 +253,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "classify_eth_type:cet"                                                                                                      ;
-+--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                   ;
-+--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
-; result ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "result[1..1]" have no fanouts ;
-; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                       ;
-+--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "classify_eth_type:cet"                                                                  ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; en_ipv4  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; en_ipv6  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; en_other ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -281,7 +294,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
-    Info: Processing started: Fri Dec 23 15:35:35 2016
+    Info: Processing started: Fri Dec 23 17:35:34 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off openflow13 -c openflow13
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -293,11 +306,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file classif
     Info (12023): Found entity 1: classify_ip_proto File: C:/research/openflow1.3/classify_ip_proto.v Line: 1
 Info (12127): Elaborating entity "openflow13" for the top level hierarchy
 Warning (10034): Output port "bit_vector" at openflow13.v(9) has no driver File: C:/research/openflow1.3/openflow13.v Line: 9
-Info (12128): Elaborating entity "classify_eth_type" for hierarchy "classify_eth_type:cet" File: C:/research/openflow1.3/openflow13.v Line: 18
-Warning (10240): Verilog HDL Always Construct warning at classify_eth_type.v(10): inferring latch(es) for variable "result", which holds its previous value in one or more paths through the always construct File: C:/research/openflow1.3/classify_eth_type.v Line: 10
-Info (10041): Inferred latch for "result[0]" at classify_eth_type.v(10) File: C:/research/openflow1.3/classify_eth_type.v Line: 10
-Info (10041): Inferred latch for "result[1]" at classify_eth_type.v(10) File: C:/research/openflow1.3/classify_eth_type.v Line: 10
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "classify_eth_type" for hierarchy "classify_eth_type:cet" File: C:/research/openflow1.3/openflow13.v Line: 23
+Critical Warning (10237): Verilog HDL warning at classify_eth_type.v(13): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/research/openflow1.3/classify_eth_type.v Line: 13
+Critical Warning (10237): Verilog HDL warning at classify_eth_type.v(14): can't infer register for assignment in edge-triggered always construct because the clock isn't obvious. Generated combinational logic instead File: C:/research/openflow1.3/classify_eth_type.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at classify_eth_type.v(10): inferring latch(es) for variable "en_ipv4", which holds its previous value in one or more paths through the always construct File: C:/research/openflow1.3/classify_eth_type.v Line: 10
+Info (10041): Inferred latch for "en_ipv4" at classify_eth_type.v(10) File: C:/research/openflow1.3/classify_eth_type.v Line: 10
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "bit_vector[0]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
     Warning (13410): Pin "bit_vector[1]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
@@ -406,9 +419,9 @@ Warning (21074): Design contains 90 input pin(s) that do not drive logic
 Info (21057): Implemented 101 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 90 input pins
     Info (21059): Implemented 11 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 107 warnings
-    Info: Peak virtual memory: 609 megabytes
-    Info: Processing ended: Fri Dec 23 15:35:44 2016
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 108 warnings
+    Info: Peak virtual memory: 610 megabytes
+    Info: Processing ended: Fri Dec 23 17:35:43 2016
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:20
 

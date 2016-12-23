@@ -1,5 +1,5 @@
 Fitter report for openflow13
-Fri Dec 23 15:35:54 2016
+Fri Dec 23 17:35:53 2016
 Quartus Prime Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
 
 
@@ -59,7 +59,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Dec 23 15:35:54 2016       ;
+; Fitter Status                      ; Successful - Fri Dec 23 17:35:53 2016       ;
 ; Quartus Prime Version              ; 16.1.1 Build 200 11/30/2016 SJ Lite Edition ;
 ; Revision Name                      ; openflow13                                  ;
 ; Top-level Entity Name              ; openflow13                                  ;
@@ -1988,10 +1988,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/research/openflow1.3/output_files/openflow13.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1463 megabytes
-    Info: Processing ended: Fri Dec 23 15:35:54 2016
+    Info: Peak virtual memory: 1462 megabytes
+    Info: Processing ended: Fri Dec 23 17:35:53 2016
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Total CPU time (on all processors): 00:00:14
 
 
 +----------------------------+
