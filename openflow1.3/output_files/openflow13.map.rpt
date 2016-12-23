@@ -1,5 +1,5 @@
 Analysis & Synthesis report for openflow13
-Thu Dec 22 13:48:03 2016
+Fri Dec 23 15:22:39 2016
 Quartus Prime Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
 
 
@@ -14,9 +14,11 @@ Quartus Prime Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: classify_eth_type:cet
+ 10. Port Connectivity Checks: "classify_eth_type:cet"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,7 +45,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 22 13:48:03 2016       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 23 15:22:39 2016       ;
 ; Quartus Prime Version              ; 16.1.1 Build 200 11/30/2016 SJ Lite Edition ;
 ; Revision Name                      ; openflow13                                  ;
 ; Top-level Entity Name              ; openflow13                                  ;
@@ -52,7 +54,7 @@ agreement for further details.
 ;     Total combinational functions  ; 0                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 22                                          ;
+; Total pins                         ; 101                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -162,44 +164,45 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                       ;
-+----------------------------------+-----------------+------------------------+--------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path         ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------+---------+
-; openflow13.v                     ; yes             ; User Verilog HDL File  ; C:/research/openflow1.3/openflow13.v ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                              ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
+; openflow13.v                     ; yes             ; User Verilog HDL File  ; C:/research/openflow1.3/openflow13.v        ;         ;
+; classify_eth_type.v              ; yes             ; User Verilog HDL File  ; C:/research/openflow1.3/classify_eth_type.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-;                                             ;           ;
-; Total combinational functions               ; 0         ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 0         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 0         ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 0         ;
-;     -- Dedicated logic registers            ; 0         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 22        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; packet[0] ;
-; Maximum fan-out                             ; 1         ;
-; Total fan-out                               ; 22        ;
-; Average fan-out                             ; 0.50      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 101   ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 101   ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,7 +210,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |openflow13                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |openflow13         ; openflow13  ; work         ;
+; |openflow13                ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 101  ; 0            ; |openflow13         ; openflow13  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -227,12 +230,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: classify_eth_type:cet ;
++----------------+------------------+--------------------------------+
+; Parameter Name ; Value            ; Type                           ;
++----------------+------------------+--------------------------------+
+; ipv4           ; 0000100000000000 ; Unsigned Binary                ;
+; ipv6           ; 1000011011011101 ; Unsigned Binary                ;
++----------------+------------------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "classify_eth_type:cet"                                                                                                      ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                   ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; result ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "result[1..1]" have no fanouts ;
+; result ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                       ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 22                          ;
+; boundary_port         ; 101                         ;
 ; cycloneiii_lcell_comb ; 1                           ;
 ;     normal            ; 1                           ;
 ;         0 data inputs ; 1                           ;
@@ -257,7 +281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
-    Info: Processing started: Thu Dec 22 13:47:55 2016
+    Info: Processing started: Fri Dec 23 15:22:30 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off openflow13 -c openflow13
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -266,40 +290,124 @@ Info (12021): Found 1 design units, including 1 entities, in source file openflo
 Info (12021): Found 1 design units, including 1 entities, in source file classify_eth_type.v
     Info (12023): Found entity 1: classify_eth_type File: C:/research/openflow1.3/classify_eth_type.v Line: 1
 Info (12127): Elaborating entity "openflow13" for the top level hierarchy
-Warning (10034): Output port "bit_vector" at openflow13.v(4) has no driver File: C:/research/openflow1.3/openflow13.v Line: 4
+Warning (10034): Output port "bit_vector" at openflow13.v(9) has no driver File: C:/research/openflow1.3/openflow13.v Line: 9
+Info (12128): Elaborating entity "classify_eth_type" for hierarchy "classify_eth_type:cet" File: C:/research/openflow1.3/openflow13.v Line: 18
+Warning (10240): Verilog HDL Always Construct warning at classify_eth_type.v(10): inferring latch(es) for variable "result", which holds its previous value in one or more paths through the always construct File: C:/research/openflow1.3/classify_eth_type.v Line: 10
+Info (10041): Inferred latch for "result[0]" at classify_eth_type.v(10) File: C:/research/openflow1.3/classify_eth_type.v Line: 10
+Info (10041): Inferred latch for "result[1]" at classify_eth_type.v(10) File: C:/research/openflow1.3/classify_eth_type.v Line: 10
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "bit_vector[0]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[1]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[2]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[3]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[4]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[5]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[6]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[7]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[8]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[9]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
-    Warning (13410): Pin "bit_vector[10]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (13410): Pin "bit_vector[0]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[1]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[2]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[3]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[4]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[5]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[6]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[7]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[8]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[9]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
+    Warning (13410): Pin "bit_vector[10]" is stuck at GND File: C:/research/openflow1.3/openflow13.v Line: 9
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "packet[0]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[1]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[2]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[3]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[4]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[5]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[6]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[7]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[8]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[9]" File: C:/research/openflow1.3/openflow13.v Line: 2
-    Warning (15610): No output dependent on input pin "packet[10]" File: C:/research/openflow1.3/openflow13.v Line: 2
-Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
+Warning (21074): Design contains 90 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/research/openflow1.3/openflow13.v Line: 2
+    Warning (15610): No output dependent on input pin "rst" File: C:/research/openflow1.3/openflow13.v Line: 2
+    Warning (15610): No output dependent on input pin "ip_proto[0]" File: C:/research/openflow1.3/openflow13.v Line: 3
+    Warning (15610): No output dependent on input pin "ip_proto[1]" File: C:/research/openflow1.3/openflow13.v Line: 3
+    Warning (15610): No output dependent on input pin "ip_proto[2]" File: C:/research/openflow1.3/openflow13.v Line: 3
+    Warning (15610): No output dependent on input pin "ip_proto[3]" File: C:/research/openflow1.3/openflow13.v Line: 3
+    Warning (15610): No output dependent on input pin "ip_proto[4]" File: C:/research/openflow1.3/openflow13.v Line: 3
+    Warning (15610): No output dependent on input pin "ip_proto[5]" File: C:/research/openflow1.3/openflow13.v Line: 3
+    Warning (15610): No output dependent on input pin "ip_proto[6]" File: C:/research/openflow1.3/openflow13.v Line: 3
+    Warning (15610): No output dependent on input pin "ip_proto[7]" File: C:/research/openflow1.3/openflow13.v Line: 3
+    Warning (15610): No output dependent on input pin "eth_type[0]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[1]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[2]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[3]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[4]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[5]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[6]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[7]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[8]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[9]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[10]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[11]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[12]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[13]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[14]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "eth_type[15]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[0]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[1]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[2]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[3]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[4]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[5]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[6]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[7]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[8]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[9]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[10]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[11]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[12]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[13]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[14]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_src[15]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[0]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[1]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[2]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[3]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[4]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[5]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[6]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[7]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[8]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[9]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[10]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[11]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[12]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[13]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[14]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "tcp_dst[15]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[0]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[1]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[2]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[3]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[4]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[5]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[6]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[7]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[8]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[9]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[10]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[11]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[12]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[13]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[14]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_src[15]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[0]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[1]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[2]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[3]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[4]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[5]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[6]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[7]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[8]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[9]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[10]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[11]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[12]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[13]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[14]" File: C:/research/openflow1.3/openflow13.v Line: 4
+    Warning (15610): No output dependent on input pin "udp_dst[15]" File: C:/research/openflow1.3/openflow13.v Line: 4
+Info (21057): Implemented 101 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 90 input pins
     Info (21059): Implemented 11 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 609 megabytes
-    Info: Processing ended: Thu Dec 22 13:48:03 2016
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:19
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 107 warnings
+    Info: Peak virtual memory: 608 megabytes
+    Info: Processing ended: Fri Dec 23 15:22:39 2016
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
 
 
