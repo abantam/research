@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Dec 15 19:15:38 2016
-Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 SJ Web Edition
+Analysis & Synthesis Status : Successful - Fri Jan 13 15:07:10 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : FSBV
 Top-level Entity Name : FSBV
 Family : Cyclone IV E
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 138
+Total logic elements : 243
+    Total combinational functions : 212
+    Dedicated logic registers : 147
+Total registers : 147
+Total pins : 66
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 2,048
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

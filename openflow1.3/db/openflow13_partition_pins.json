@@ -2,7 +2,92 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "en_ipv4",
+					"strict" : false
+				},
+				{
+					"name" : "en_ipv6",
+					"strict" : false
+				},
+				{
+					"name" : "en_other",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[11]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[15]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[1]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[5]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[8]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[12]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[13]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[14]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[0]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[2]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[3]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[4]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[6]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[7]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[9]",
+					"strict" : false
+				},
+				{
+					"name" : "eth_type[10]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

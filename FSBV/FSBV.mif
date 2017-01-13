@@ -1,0 +1,89 @@
+-- Copyright (C) 2016  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Intel and sold by Intel or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=32;
+DEPTH=64;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	00  :   00000000;
+	01  :   00000001;
+	02  :   00000002;
+	03  :   00000003;
+	04  :   00000004;
+	05  :   00000005;
+	06  :   00000006;
+	07  :   00000007;
+	08  :   00000008;
+	09  :   00000009;
+	0A  :   0000000A;
+	0B  :   0000000B;
+	0C  :   0000000C;
+	0D  :   0000000D;
+	0E  :   0000000E;
+	0F  :   0000000F;
+	10  :   00000010;
+	11  :   00000011;
+	12  :   00000012;
+	13  :   00000013;
+	14  :   00000014;
+	15  :   00000015;
+	16  :   00000016;
+	17  :   00000017;
+	18  :   00000018;
+	19  :   00000019;
+	1A  :   0000001A;
+	1B  :   0000001B;
+	1C  :   0000001C;
+	1D  :   0000001D;
+	1E  :   0000001E;
+	1F  :   0000001F;
+	20  :   00000020;
+	21  :   00000021;
+	22  :   00000022;
+	23  :   00000023;
+	24  :   00000024;
+	25  :   00000025;
+	26  :   00000026;
+	27  :   00000027;
+	28  :   00000028;
+	29  :   00000029;
+	2A  :   0000002A;
+	2B  :   0000002B;
+	2C  :   0000002C;
+	2D  :   0000002D;
+	2E  :   0000002E;
+	2F  :   0000002F;
+	30  :   00000030;
+	31  :   00000031;
+	32  :   00000032;
+	33  :   00000033;
+	34  :   00000034;
+	35  :   00000035;
+	36  :   00000036;
+	37  :   00000037;
+	38  :   00000038;
+	39  :   00000039;
+	3A  :   0000003A;
+	3B  :   0000003B;
+	3C  :   0000003C;
+	3D  :   0000003D;
+	3E  :   0000003E;
+	3F  :   0000003F;
+END;

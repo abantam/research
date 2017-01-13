@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "matching_bv[0]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[1]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[2]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[3]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[4]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[5]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[6]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[7]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[8]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[9]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[10]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[11]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[12]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[13]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[14]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[15]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[16]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[17]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[18]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[19]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[20]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[21]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[22]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[23]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[24]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[25]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[26]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[27]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[28]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[29]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[30]",
+					"strict" : false
+				},
+				{
+					"name" : "matching_bv[31]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

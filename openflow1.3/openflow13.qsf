@@ -49,11 +49,43 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name VERILOG_FILE openflow13.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VERILOG_FILE classify_eth_type.v
 set_global_assignment -name VERILOG_FILE classify_ip_proto.v
 set_global_assignment -name VERILOG_FILE rom.v
 set_global_assignment -name VERILOG_FILE ram.v
+set_global_assignment -name POWER_USE_INPUT_FILES OFF
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH classify_eth_type_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME classify_eth_type_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id classify_eth_type_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME classify_eth_type_tb -section_id classify_eth_type_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE classify_eth_type.v -section_id classify_eth_type_tb
+set_location_assignment PIN_Y2 -to clk
+set_location_assignment PIN_G19 -to en_ipv4
+set_location_assignment PIN_F19 -to en_ipv6
+set_location_assignment PIN_E19 -to en_other
+set_location_assignment PIN_AB28 -to eth_type[0]
+set_location_assignment PIN_AC28 -to eth_type[1]
+set_location_assignment PIN_AC27 -to eth_type[2]
+set_location_assignment PIN_AD27 -to eth_type[3]
+set_location_assignment PIN_AB27 -to eth_type[4]
+set_location_assignment PIN_AC26 -to eth_type[5]
+set_location_assignment PIN_AD26 -to eth_type[6]
+set_location_assignment PIN_AB26 -to eth_type[7]
+set_location_assignment PIN_AC25 -to eth_type[8]
+set_location_assignment PIN_AB25 -to eth_type[9]
+set_location_assignment PIN_AC24 -to eth_type[10]
+set_location_assignment PIN_AB24 -to eth_type[11]
+set_location_assignment PIN_AB23 -to eth_type[12]
+set_location_assignment PIN_AA24 -to eth_type[13]
+set_location_assignment PIN_AA23 -to eth_type[14]
+set_location_assignment PIN_AA22 -to eth_type[15]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

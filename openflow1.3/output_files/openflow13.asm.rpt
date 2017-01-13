@@ -1,5 +1,5 @@
 Assembler report for openflow13
-Sat Dec 24 14:05:55 2016
+Wed Jan 04 14:10:06 2017
 Quartus Prime Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
 
 
@@ -38,9 +38,9 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sat Dec 24 14:05:55 2016 ;
+; Assembler Status      ; Successful - Wed Jan 04 14:10:06 2017 ;
 ; Revision Name         ; openflow13                            ;
-; Top-level Entity Name ; openflow13                            ;
+; Top-level Entity Name ; classify_eth_type                     ;
 ; Family                ; Cyclone IV E                          ;
 ; Device                ; EP4CE115F29C7                         ;
 +-----------------------+---------------------------------------+
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                                                      ;
 +----------------+--------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                ;
-; JTAG usercode  ; 0x00561AC7                                                   ;
-; Checksum       ; 0x00561AC7                                                   ;
+; JTAG usercode  ; 0x0056607E                                                   ;
+; Checksum       ; 0x0056607E                                                   ;
 +----------------+--------------------------------------------------------------+
 
 
@@ -79,14 +79,14 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.1.1 Build 200 11/30/2016 SJ Lite Edition
-    Info: Processing started: Sat Dec 24 14:05:52 2016
+    Info: Processing started: Wed Jan 04 14:10:03 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off openflow13 -c openflow13
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 557 megabytes
-    Info: Processing ended: Sat Dec 24 14:05:55 2016
+    Info: Peak virtual memory: 560 megabytes
+    Info: Processing ended: Wed Jan 04 14:10:06 2017
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

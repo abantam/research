@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Mon Dec 26 19:13:13 2016
+Quartus Prime Version : 16.1.1 Build 200 11/30/2016 SJ Lite Edition
+Revision Name : openflow13
+Top-level Entity Name : classify_eth_type
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Power Models : Final
+Total Thermal Power Dissipation : 130.46 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 98.46 mW
+I/O Thermal Power Dissipation : 32.00 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sat Dec 24 14:05:42 2016
+Analysis & Synthesis Status : Successful - Wed Jan 04 14:09:51 2017
 Quartus Prime Version : 16.1.1 Build 200 11/30/2016 SJ Lite Edition
 Revision Name : openflow13
-Top-level Entity Name : openflow13
+Top-level Entity Name : classify_eth_type
 Family : Cyclone IV E
-Total logic elements : 0
-    Total combinational functions : 0
+Total logic elements : 16
+    Total combinational functions : 16
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 101
+Total pins : 21
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
